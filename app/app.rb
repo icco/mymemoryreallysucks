@@ -24,7 +24,7 @@ class Mymemoryreallysucks < Padrino::Application
       reply = RestClient.post(
          "http://upload.box.net/api/1.0/upload/#{authtoken}/#{folder}",
          :file => IO.open(RestClient.get(params["RecordingUrl"]), 'rb'),
-         :share = 0,
+         :share => 0,
       )
 
       f.close
