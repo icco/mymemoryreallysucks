@@ -56,5 +56,8 @@ class Mymemoryreallysucks < Padrino::Application
   #   error 505 do
   #     render 'errors/505'
   #   end
-  #
+
+  get '/' do
+     erb :index
+  end
 end
