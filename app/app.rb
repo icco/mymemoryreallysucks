@@ -67,7 +67,18 @@ class Mymemoryreallysucks < Padrino::Application
    end
 
    post '/add-note' do
-      p params
+      folder = "/notes/"
+      authtoken = "1234asd"
+
+      f = File.new(filename, File::RDWR)
+      reply = RestClient.post(
+         "http://upload.box.net/api/1.0/upload/#{authtoken}/#{folder}",
+         :file => IO.open(RestClient.get(params["RecordingUrl"]), 'rb'),
+         :share = 0,
+      )
+
+      f.close
+
       erb :success
    end
 end
