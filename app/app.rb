@@ -60,4 +60,10 @@ class Mymemoryreallysucks < Padrino::Application
    get '/' do
       erb :index
    end
+
+   post '/call' do
+
+      p params
+
+   end
 end
