@@ -7,7 +7,7 @@ gem 'thin'
 gem 'rake'
 gem 'rack-flash'
 gem 'rest-client'
-gem 'box-api', :require => "box"
+gem 'box-api'
 
 # Component requirements
 gem 'less'
