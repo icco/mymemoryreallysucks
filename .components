@@ -5,3 +5,4 @@
 :script: mootools
 :renderer: erb
 :stylesheet: less
+:admin_renderer: erb

@@ -13,6 +13,7 @@ GEM
     activesupport (3.0.10)
     addressable (2.2.6)
     arel (2.0.10)
+    bcrypt-ruby (2.1.4)
     box-api (0.1.8)
       httmultiparty (~> 0.3)
     builder (2.1.2)
@@ -110,6 +111,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
+  bcrypt-ruby
   box-api
   erubis (~> 2.7.0)
   heroku

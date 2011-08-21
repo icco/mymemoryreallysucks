@@ -10,6 +10,7 @@ gem 'rest-client'
 gem 'box-api'
 
 # Component requirements
+gem 'bcrypt-ruby', :require => "bcrypt"
 gem 'less'
 gem 'rack-less'
 gem 'erubis', "~> 2.7.0"
