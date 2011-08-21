@@ -6,6 +6,8 @@ gem 'thin'
 # Project requirements
 gem 'rake'
 gem 'rack-flash'
+gem 'rest-client'
+gem 'box-api', :require => "box"
 
 # Component requirements
 gem 'less'
@@ -14,7 +16,6 @@ gem 'erubis', "~> 2.7.0"
 gem 'activerecord', :require => "active_record"
 #gem 'pg', :require => "postgres"
 gem 'sqlite3'
-gem 'rest-client'
 
 # Test requirements
 gem 'heroku'

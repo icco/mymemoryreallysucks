@@ -13,7 +13,10 @@ GEM
     activesupport (3.0.10)
     addressable (2.2.6)
     arel (2.0.10)
+    box-api (0.1.8)
+      httmultiparty (~> 0.3)
     builder (2.1.2)
+    crack (0.1.8)
     daemons (1.1.4)
     diff-lcs (1.1.2)
     erubis (2.7.0)
@@ -25,9 +28,14 @@ GEM
       launchy (>= 0.3.2)
       rest-client (~> 1.6.1)
       term-ansicolor (~> 1.0.5)
+    httmultiparty (0.3.5)
+      httparty (>= 0.7.3)
+      multipart-post
     http_router (0.9.7)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
+    httparty (0.7.8)
+      crack (= 0.1.8)
     i18n (0.5.0)
     launchy (2.0.5)
       addressable (~> 2.2.6)
@@ -39,6 +47,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    multipart-post (1.1.3)
     mutter (0.5.3)
     padrino (0.10.1)
       padrino-admin (= 0.10.1)
@@ -101,6 +110,7 @@ PLATFORMS
 
 DEPENDENCIES
   activerecord
+  box-api
   erubis (~> 2.7.0)
   heroku
   less
