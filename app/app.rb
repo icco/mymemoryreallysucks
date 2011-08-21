@@ -14,6 +14,11 @@ class Mymemoryreallysucks < Padrino::Application
       erb :call, :locals => { :params => params }
    end
 
+   post '/sms' do
+      p params
+
+   end
+
    post '/add-note' do
       p params
 
