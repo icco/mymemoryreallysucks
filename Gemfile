@@ -14,19 +14,14 @@ gem 'erubis', "~> 2.7.0"
 gem 'activerecord', :require => "active_record"
 #gem 'pg', :require => "postgres"
 gem 'sqlite3'
+gem 'rest-client'
 
 # Test requirements
+gem 'heroku'
 
 
 # Padrino
 gem 'padrino', '0.10.1'
+
 # Padrino EDGE
 # gem 'padrino', :git => 'git://github.com/padrino/padrino-framework.git'
-#
-# Individual GEMS
-# gem 'padrino-core', '0.10.1'
-# gem 'padrino-admin', '0.10.1'
-# gem 'padrino-cache', '0.10.1'
-# gem 'padrino-gen', '0.10.1'
-# gem 'padrino-helpers', '0.10.1'
-# gem 'padrino-mailer', '0.10.1'
