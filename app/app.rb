@@ -62,8 +62,6 @@ class Mymemoryreallysucks < Padrino::Application
    end
 
    post '/call' do
-
-      p params
-
+      erb :call, :locals => { :params => params}
    end
 end
