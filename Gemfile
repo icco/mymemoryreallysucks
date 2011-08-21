@@ -22,7 +22,7 @@ gem 'sqlite3'
 gem 'heroku'
 
 # Padrino
-gem 'padrino', '0.10.1'
+#gem 'padrino', '0.10.1'
 
 # Padrino EDGE
-# gem 'padrino', :git => 'git://github.com/padrino/padrino-framework.git'
+gem 'padrino', :git => 'git://github.com/padrino/padrino-framework.git'

@@ -1,8 +1,9 @@
 ##
 
+# Local dev
 ActiveRecord::Base.configurations[:development] = {
    :adapter => 'sqlite3',
-   :database => Padrino.root('db', "mymemoryreallysucks_production.db")
+   :database => Padrino.root('db', "dev.db")
 }
 
 # For Heroku.
@@ -18,7 +19,7 @@ ActiveRecord::Base.configurations[:production] = {
 
 ActiveRecord::Base.configurations[:test] = {
    :adapter => 'sqlite3',
-   :database => Padrino.root('db', "mymemoryreallysucks_test.db")
+   :database => Padrino.root('db', "test.db")
 }
 
 # Setup our logger
