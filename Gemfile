@@ -1,7 +1,7 @@
 source :rubygems
 
 # Server requirements
-# gem 'thin' or mongrel
+gem 'thin'
 
 # Project requirements
 gem 'rake'
@@ -12,6 +12,7 @@ gem 'less'
 gem 'rack-less'
 gem 'erubis', "~> 2.7.0"
 gem 'activerecord', :require => "active_record"
+#gem 'pg', :require => "postgres"
 gem 'sqlite3'
 
 # Test requirements
