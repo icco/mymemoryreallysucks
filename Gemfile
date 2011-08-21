@@ -19,7 +19,6 @@ gem 'rest-client'
 # Test requirements
 gem 'heroku'
 
-
 # Padrino
 gem 'padrino', '0.10.1'
 
