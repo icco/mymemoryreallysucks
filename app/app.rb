@@ -67,6 +67,8 @@ class Mymemoryreallysucks < Padrino::Application
    end
 
    post '/add-note' do
+      p params
+
       folder = "/notes/"
       authtoken = "1234asd"
 
