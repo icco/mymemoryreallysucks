@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 2) do
+ActiveRecord::Schema.define(:version => 3) do
 
   create_table "accounts", :force => true do |t|
     t.string "username"
@@ -18,6 +18,11 @@ ActiveRecord::Schema.define(:version => 2) do
     t.string "crypted_password"
     t.string "role"
     t.string "phone"
+  end
+
+  create_table "boxes", :force => true do |t|
+    t.string "account_id"
+    t.string "auth_token"
   end
 
 end
