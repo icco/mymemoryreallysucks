@@ -7,7 +7,7 @@ gem 'thin'
 gem 'rake'
 gem 'rack-flash'
 gem 'rest-client'
-gem 'box-api'
+gem 'dropbox'
 
 # Component requirements
 gem 'bcrypt-ruby', :require => "bcrypt"
