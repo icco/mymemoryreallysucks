@@ -14,8 +14,8 @@ class Account < ActiveRecord::Base
    validates_format_of       :email,    :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i
    validates_format_of       :role,     :with => /[A-Za-z]/
 
-      # Callbacks
-      before_save :encrypt_password, :if => :password_required
+   # Callbacks
+   before_save :encrypt_password, :if => :password_required
 
    ##
    # This method is for authentication purpose
@@ -27,6 +27,10 @@ class Account < ActiveRecord::Base
 
    def has_password?(password)
       ::BCrypt::Password.new(crypted_password) == password
+   end
+
+   def new_sms params
+      p params
    end
 
    private
