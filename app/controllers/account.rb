@@ -34,4 +34,18 @@ Mymemoryreallysucks.controllers :account do
          redirect url(:account, :index)
       end
    end
+
+   put :note, with => :id do
+      p params
+
+      folder = "/notes/"
+
+      reply = RestClient.post(
+         "http://upload.box.net/api/1.0/upload/#{authtoken}/#{folder}",
+         :file => IO.open(RestClient.get(params["RecordingUrl"]), 'rb'),
+         :share => 0,
+      )
+
+      render :success
+   end
 end
