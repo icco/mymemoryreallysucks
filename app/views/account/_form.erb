@@ -1,0 +1,30 @@
+<div class="group">
+   <%= f.label :username %><%= f.error_message_on :username %>
+   <%= f.text_field :username, :class => :text_field %>
+   <span class="description">Your username</span>
+</div>
+<div class="group">
+   <%= f.label :phone %><%= f.error_message_on :phone %>
+   <%= f.text_field :phone, :class => :text_field %>
+   <span class="description">The phone number you will be calling from.</span>
+</div>
+<div class="group">
+   <%= f.label :email %><%= f.error_message_on :email %>
+   <%= f.text_field :email, :class => :text_field %>
+   <span class="description">Your email address</span>
+</div>
+<div class="group">
+   <%= f.label :password %><%= f.error_message_on :password %>
+   <%= f.password_field :password, :class => :password_field %>
+   <span class="description">Try to use a strong password</span>
+</div>
+<div class="group">
+   <%= f.label :password_confirmation %><%= f.error_message_on :password_confirmation %>
+   <%= f.password_field :password_confirmation, :class => :password_field %>
+   <span class="description">Your password again.</span>
+</div>
+
+<div class="group navform wat-cf">
+   <%= f.submit pat(:save), :class => :button %>
+   <%= f.submit pat(:cancel), :onclick => "window.location='#{url(:account, :index)}';return false", :class => :button %>
+</div>

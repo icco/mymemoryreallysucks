@@ -2,7 +2,8 @@ class CreateBoxes < ActiveRecord::Migration
   def self.up
     create_table :boxes do |t|
       t.string :account_id
-      t.string :auth_token
+      t.string :box_type
+      t.string :token
     end
   end
 

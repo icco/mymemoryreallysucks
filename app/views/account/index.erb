@@ -7,12 +7,24 @@
    </head>
    <body>
       <div id="container">
+      <div class="flash">
+        <%= [:error, :warning, :notice].map { |type| flash_tag(type, :class => "message #{type}") }.join %>
+      </div>
          <div id="box">
             <h1>My Memory Really Sucks!</h1>
             <div class="block" id="block-login">
                <h2>Dropbox</h2>
                <div class="content">
                   Authorized with Dropbox!
+               </div>
+            </div>
+
+            <div class="block" id="block-login">
+               <h2>Account</h2>
+               <div class="content">
+                  <% form_for account, url(:account, :update), :method => :put, :class => :form do |f| %>
+                     <%= partial "account/form", :locals => { :f => f } %>
+                  <% end %>
                </div>
             </div>
          </div>

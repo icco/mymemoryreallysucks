@@ -22,7 +22,8 @@ ActiveRecord::Schema.define(:version => 3) do
 
   create_table "boxes", :force => true do |t|
     t.string "account_id"
-    t.string "auth_token"
+    t.string "box_type"
+    t.string "token"
   end
 
 end
